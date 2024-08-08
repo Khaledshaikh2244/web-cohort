@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oTailwind</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+   <nav class="p-3 flex bg-white justify-between items-center">
+     <a href="#" id="brand"  class="flex gap-2 items-center" >
+        <img src="./assets//asset 0.png" alt="logo"
+        class="object-cover max-h-12 max-w-12"
+        >
+        <span class="text-lg font-medium font-display"   > 
+            ToDesktop
+        </span>
+     </a>   
+
+     <!-- nav menus items -->
+      <div id="nav-menu" class="hidden lg:flex gap-12 ">
+        <a href="#" class="font-medium hover:text-primary">Pricing</a>
+        <a href="#" class="font-medium hover:text-primary">Docs</a>
+        <a href="#" class="font-medium hover:text-primary">Change Logs</a>
+        <a href="#" class="font-medium hover:text-primary">Pricing</a>
+        <a href="#" class="font-medium hover:text-primary">Login</a>
+      </div>
+
+      <button id ="btn-p" class="hidden lg:flex hover:bg-slate-500 hover:text-white border border-gray-500 rounded-lg   p-2 gap-2  items-center">
+        <img src="./assets/asset 1.svg" alt="">
+        <span>Electron Developers</span>  
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+
+     <button class="p-2 lg:hidden inset-0-red" onclick="handleChange()"  >
+        <i class="fa-solid fa-bars text-gray-500"></i>
+     </button>
+     
+    <div class="fixed hidden bg-red-950 inset-0">
+        <div id="nav-bar">
+            <a href="#" id="brand"  class="flex gap-2 items-center" >
+                <img src="./assets//asset 0.png" alt="logo"
+                class="object-cover max-h-12 max-w-12"
+                >
+                <span class="text-lg font-medium font-display"   > 
+                    ToDesktop
+                </span>
+             </a>               
+        </div>
+        <button id ="btn-p" class="hidden lg:flex hover:bg-slate-500 hover:text-white border border-gray-500 rounded-lg   p-2 gap-2  items-center">
+            <img src="./assets/asset 1.svg" alt="">
+            <span>Electron Developers</span>  
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+    </div>
+   </nav>
+</body>
+<Script src="script.js"></Script>
+</html>
